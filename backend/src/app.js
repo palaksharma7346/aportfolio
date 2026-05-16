@@ -17,9 +17,33 @@ const limiter = rateLimit({
 app.use(express.json());
 app.use(
   cors({
-     origin: [
-      "https://aportfolio-r2i6.vercel.app",
-    ],
+
+    origin: (origin, callback) => {
+
+      if (
+        !origin ||
+
+        origin.includes(
+          "vercel.app"
+        ) ||
+
+        origin.includes(
+          "localhost"
+        )
+      ) {
+
+        callback(null, true);
+
+      } else {
+
+        callback(
+          new Error(
+            "Not allowed by CORS"
+          )
+        );
+      }
+    },
+
     credentials: true,
   })
 );
