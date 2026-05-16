@@ -7,7 +7,7 @@ import Contact from '../components/contact/Contact'
 
 const Home = () => {
   return (
-    <div>
+    <div className='overflow-x-hidden'>
       <Hero />
       <About />
       <Projects />

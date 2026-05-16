@@ -14,7 +14,7 @@ const ContactInfo = () => {
     {
       icon: <FaEnvelope />,
       title: "Email",
-      value: "palak412005sharma@gmail.co.com",
+      value: "palak412005sharma@gmail.com",
     },
 
     {
@@ -60,7 +60,7 @@ const ContactInfo = () => {
         {contactData.map((item, index) => (
           <div
             key={index}
-            className="flex items-center gap-5 bg-slate-900 border border-slate-800 p-5 rounded-2xl"
+            className="flex flex-col sm:flex-row items-start  sm:items-center gap-4 bg-slate-900 border border-slate-800 p-5 rounded-2xl overflow-hidden"
           >
 
             {/* ICON */}
@@ -75,7 +75,9 @@ const ContactInfo = () => {
                 {item.title}
               </h4>
 
-              <p className="text-slate-400">
+              <p className="text-slate-400 break-all
+    text-sm
+    sm:text-base">
                 {item.value}
               </p>
 

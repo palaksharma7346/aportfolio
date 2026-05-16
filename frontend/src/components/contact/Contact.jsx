@@ -5,7 +5,7 @@ import ContactForm from "./ContactForm";
 
 const Contact = () => {
   return (
-    <section className="py-24 px-6 bg-slate-950">
+    <section className="py-24 px-4 sm:px-6 bg-slate-950 ">
 
       <div className="max-w-7xl mx-auto">
 
@@ -33,7 +33,7 @@ const Contact = () => {
 
 
         {/* CONTENT */}
-        <div className="grid lg:grid-cols-2 gap-16">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16">
 
           {/* LEFT */}
           <ContactInfo />

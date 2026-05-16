@@ -82,7 +82,7 @@ const HeroContent = () => {
           <img
             src={profileImg}
             alt="profile"
-            className="relative w-[320px] md:w-[420px] h-[300px] md:h-[500px] rounded-3xl border border-slate-700 shadow-2xl"
+            className="relative w-full max-w-[280px] md:max-w-[420px] h-[300px] md:h-[500px] object-cover rounded-3xl border border-slate-700 shadow-2xl"
           />
         </div>
       </motion.div>
