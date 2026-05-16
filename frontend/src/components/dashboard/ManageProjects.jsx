@@ -10,7 +10,7 @@ import ProjectTable from "./ProjectTable";
 import {
   getProjects,
   deleteProject,
-} from "../../services/projectService";
+} from "../../services/projectservice";
 
 const ManageProjects = () => {
 

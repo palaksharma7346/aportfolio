@@ -8,7 +8,7 @@ from "react-hot-toast";
 
 import {
   loginUser,
-} from "../services/authService";
+} from "../services/authservice";
 
 import {
   useAuth,

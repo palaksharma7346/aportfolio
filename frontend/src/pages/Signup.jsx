@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 import toast from "react-hot-toast";
 
-import { signupUser } from "../services/authService";
+import { signupUser } from "../services/authservice";
 
 import { useAuth } from "../context/AuthContext";
 

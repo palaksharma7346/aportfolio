@@ -4,7 +4,7 @@ import toast from "react-hot-toast";
 
 import {
   createProject,
-} from "../../services/projectService";
+} from "../../services/projectservice";
 
 const ProjectForm = () => {
 
