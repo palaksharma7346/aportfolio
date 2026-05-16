@@ -4,7 +4,7 @@ import User from "../models/User.js";
 import generateToken from "../utils/generateToken.js";
 
 
-// SIGNUP
+
 export const signup = async (req, res) => {
   try {
     const { name, email, password } = req.body;
@@ -20,11 +20,10 @@ export const signup = async (req, res) => {
       });
     }
 
-    // Hash password
     const hashedPassword =
       await bcrypt.hash(password, 10);
 
-    // Create user
+
     const user = await User.create({
       name,
       email,
@@ -32,7 +31,6 @@ export const signup = async (req, res) => {
 
     });
 
-    // Generate token
     const token = generateToken(user._id);
 
     res.status(201).json({
@@ -55,7 +53,6 @@ export const signup = async (req, res) => {
 };
 
 
-// LOGIN
 export const login = async (req, res) => {
   try {
     const {
@@ -64,7 +61,6 @@ export const login = async (req, res) => {
   role,
 } = req.body;
 
-    // Find user
     const user = await User.findOne({
       email,
     });
@@ -75,7 +71,6 @@ export const login = async (req, res) => {
       });
     }
 
-    // Compare password
     const isMatch =
       await bcrypt.compare(
         password,
@@ -96,7 +91,7 @@ export const login = async (req, res) => {
 
   });
 }
-    // Generate token
+
     const token = generateToken(user._id);
 
     res.status(200).json({

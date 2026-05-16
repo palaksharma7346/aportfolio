@@ -23,19 +23,19 @@ const Projects = () => {
   const { user } = useAuth();
 
 
-  // DATABASE PROJECTS
+
   const [projects, setProjects] =
     useState([]);
 
 
-  // FILTER CATEGORY
+
   const [
     selectedCategory,
     setSelectedCategory,
   ] = useState("All");
 
 
-  // FETCH PROJECTS
+
   useEffect(() => {
 
     const fetchProjects =
@@ -60,7 +60,7 @@ const Projects = () => {
   }, []);
 
 
-  // FILTERS
+
   const categories = [
     "All",
     "Frontend",
@@ -69,7 +69,7 @@ const Projects = () => {
   ];
 
 
-  // FILTER LOGIC
+
   const filteredProjects =
     selectedCategory === "All"
       ? projects
@@ -85,7 +85,7 @@ const Projects = () => {
 
       <div className="max-w-7xl mx-auto">
 
-        {/* TITLE */}
+       
         <motion.div
           initial={{
             opacity: 0,
@@ -115,7 +115,7 @@ const Projects = () => {
         </motion.div>
 
 
-        {/* FILTER */}
+        
         <ProjectFilter
           categories={categories}
           selectedCategory={
@@ -127,7 +127,7 @@ const Projects = () => {
         />
 
 
-        {/* GRID */}
+     
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
 
           {filteredProjects.map(
@@ -141,7 +141,7 @@ const Projects = () => {
                 className="relative"
               >
 
-                {/* PROJECT CARD */}
+              
                 <div
                   className={
                     !user &&
@@ -158,7 +158,7 @@ const Projects = () => {
                 </div>
 
 
-                {/* LOCK OVERLAY */}
+               
                 {
                   !user &&
                   !project.public && (
@@ -182,7 +182,6 @@ const Projects = () => {
         </div>
 
 
-        {/* EMPTY STATE */}
         {
           projects.length === 0 && (
             <div className="text-center mt-20">
@@ -201,7 +200,7 @@ const Projects = () => {
         }
 
 
-        {/* LOGIN CTA */}
+
         {
           !user && (
             <div className="text-center mt-20 bg-slate-900 border border-slate-800 rounded-3xl p-10">

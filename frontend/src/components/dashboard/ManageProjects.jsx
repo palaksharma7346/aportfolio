@@ -18,7 +18,6 @@ const ManageProjects = () => {
     useState([]);
 
 
-  // FETCH PROJECTS
   const fetchProjects =
     async () => {
 
@@ -44,7 +43,6 @@ const ManageProjects = () => {
   }, []);
 
 
-  // DELETE
   const handleDelete =
     async (id) => {
 

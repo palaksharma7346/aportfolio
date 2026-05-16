@@ -20,7 +20,6 @@ const ProjectForm = () => {
     });
 
 
-  // HANDLE CHANGE
   const handleChange = (e) => {
 
     setFormData({
@@ -31,7 +30,6 @@ const ProjectForm = () => {
   };
 
 
-  // HANDLE SUBMIT
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -81,7 +79,6 @@ const ProjectForm = () => {
       </h2>
 
 
-      {/* GRID */}
       <div className="grid md:grid-cols-2 gap-6">
 
         <input
@@ -130,7 +127,6 @@ const ProjectForm = () => {
       </div>
 
 
-      {/* DESCRIPTION */}
       <textarea
         name="description"
         placeholder="Project Description"
@@ -140,7 +136,6 @@ const ProjectForm = () => {
       />
 
 
-      {/* TECH STACK */}
       <input
         type="text"
         name="tech"
@@ -151,7 +146,6 @@ const ProjectForm = () => {
       />
 
 
-      {/* CATEGORY */}
       <select
         name="category"
         value={formData.category}
@@ -174,7 +168,6 @@ const ProjectForm = () => {
       </select>
 
 
-      {/* BUTTON */}
       <button
         type="submit"
         className="mt-8 px-8 py-4 bg-cyan-500 hover:bg-cyan-600 text-black rounded-xl font-semibold transition"

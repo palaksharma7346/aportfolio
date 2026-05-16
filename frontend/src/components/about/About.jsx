@@ -10,7 +10,6 @@ const About = () => {
 
       <div className="max-w-7xl mx-auto">
 
-        {/* SECTION TITLE */}
         <motion.div
           initial={{ opacity: 0, y: 80 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -27,10 +26,8 @@ const About = () => {
           </h2>
         </motion.div>
 
-        {/* ABOUT CONTENT */}
         <div className="grid md:grid-cols-2 gap-16 items-center">
 
-          {/* LEFT */}
           <motion.div
             initial={{ opacity: 0, x: -80 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -44,7 +41,6 @@ const About = () => {
 />
           </motion.div>
 
-          {/* RIGHT */}
           <motion.div
             initial={{ opacity: 0, x: 80 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -94,17 +90,17 @@ const About = () => {
 
         </div>
 
-        {/* SKILLS */}
+       
         <div className="mt-24">
           <Skills />
         </div>
 
-        {/* TECH STACK */}
+        
         <div className="mt-24">
           <TechStack />
         </div>
 
-        {/* EXPERIENCE */}
+       
         <div className="mt-24">
           <Experience />
         </div>

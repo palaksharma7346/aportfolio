@@ -46,7 +46,6 @@ const DashboardHome = () => {
 
       </div>
 
-      {/* ANALYTICS */}
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
 
         <AnalyticsCard
@@ -71,7 +70,6 @@ const DashboardHome = () => {
 
       </div>
 
-      {/* RECENT ACTIVITY */}
       <div className="mt-10 rounded-3xl border border-slate-800 bg-slate-900 p-5 sm:p-8">
 
         <h2 className="mb-6 text-2xl font-bold sm:text-3xl">

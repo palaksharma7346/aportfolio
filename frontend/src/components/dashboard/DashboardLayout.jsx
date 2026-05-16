@@ -5,10 +5,9 @@ import DashboardNavbar from "./DashboardNavbar";
 const DashboardLayout = () => {
   return (
     <div className="min-h-screen bg-slate-950 text-white overflow-x-hidden">
-      {/* Sidebar */}
+
       <Sidebar />
 
-      {/* Main Content */}
       <main
         className="
           w-full

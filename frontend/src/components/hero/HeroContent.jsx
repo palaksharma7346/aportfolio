@@ -10,7 +10,6 @@ const HeroContent = () => {
   return (
     <div className="grid md:grid-cols-2 gap-12 items-center">
 
-      {/* LEFT SIDE */}
       <motion.div
         initial={{ opacity: 0, x: -80 }}
         animate={{ opacity: 1, x: 0 }}
@@ -62,11 +61,9 @@ const HeroContent = () => {
 
         </div>
 
-        {/* SOCIAL LINKS */}
         <SocialLinks />
       </motion.div>
 
-      {/* RIGHT SIDE */}
       <motion.div
         initial={{ opacity: 0, x: 80 }}
         animate={{ opacity: 1, x: 0 }}
@@ -75,10 +72,8 @@ const HeroContent = () => {
       >
         <div className="relative">
 
-          {/* GLOW EFFECT */}
           <div className="absolute inset-0 bg-cyan-500 blur-3xl opacity-20 rounded-full"></div>
 
-          {/* PROFILE IMAGE */}
           <img
             src={profileImg}
             alt="profile"

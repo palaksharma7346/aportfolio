@@ -10,7 +10,6 @@ const BlogList = () => {
 
       <div className="max-w-7xl mx-auto">
 
-        {/* TITLE */}
         <motion.div
           initial={{ opacity: 0, y: 60 }}
           whileInView={{
@@ -33,7 +32,6 @@ const BlogList = () => {
         </motion.div>
 
 
-        {/* GRID */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
 
           {blogsData.map((blog) => (

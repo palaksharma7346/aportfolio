@@ -8,12 +8,12 @@ const ProtectedRoute = ({
 }) => {
   const { user } = useAuth();
 
-  // Not logged in
+  
   if (!user) {
     return <Navigate to="/login" />;
   }
 
-  // Not admin
+
   if (
     user?.user?.role !== "admin"
   ) {

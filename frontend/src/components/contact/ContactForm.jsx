@@ -67,7 +67,6 @@ const ContactForm = () => {
       className="bg-slate-900 border border-slate-800 p-6 sm:p-8 rounded-3xl"
     >
 
-      {/* NAME */}
       <div className="mb-6">
 
         <label className="block text-white mb-3">
@@ -86,7 +85,6 @@ const ContactForm = () => {
       </div>
 
 
-      {/* EMAIL */}
       <div className="mb-6">
 
         <label className="block text-white mb-3">
@@ -105,7 +103,6 @@ const ContactForm = () => {
       </div>
 
 
-      {/* MESSAGE */}
       <div className="mb-8">
 
         <label className="block text-white mb-3">
@@ -124,7 +121,6 @@ const ContactForm = () => {
       </div>
 
 
-      {/* BUTTON */}
       <button
         type="submit"
         className="w-full py-4 bg-cyan-500 hover:bg-cyan-600 text-black rounded-xl font-semibold transition"

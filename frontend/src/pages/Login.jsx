@@ -68,7 +68,7 @@ const Login = () => {
         );
 
 
-        // ADMIN
+
         if (
           data.user.role ===
           "admin"
@@ -80,7 +80,6 @@ const Login = () => {
 
         }
 
-        // USER
         else {
 
           navigate("/");
@@ -115,7 +114,6 @@ const Login = () => {
         </h2>
 
 
-        {/* EMAIL */}
         <input
           type="email"
 
@@ -131,7 +129,6 @@ const Login = () => {
         />
 
 
-        {/* PASSWORD */}
         <input
           type="password"
 
@@ -147,7 +144,6 @@ const Login = () => {
         />
 
 
-        {/* ROLE */}
         <select
           name="role"
 
@@ -178,7 +174,6 @@ const Login = () => {
         </select>
 
 
-        {/* INFO TEXT */}
         <p className="text-sm text-slate-400 mb-6 text-center">
 
           Admin access is restricted
@@ -187,7 +182,6 @@ const Login = () => {
         </p>
 
 
-        {/* BUTTON */}
         <button
           type="submit"
 

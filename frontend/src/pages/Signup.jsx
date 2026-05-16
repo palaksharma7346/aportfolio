@@ -65,7 +65,6 @@ const Signup = () => {
           Signup
         </h2>
 
-        {/* NAME */}
         <input
           type="text"
           name="name"
@@ -75,7 +74,7 @@ const Signup = () => {
           className="w-full mb-5 p-4 rounded-xl bg-slate-800 outline-none"
         />
 
-        {/* EMAIL */}
+
         <input
           type="email"
           name="email"
@@ -85,7 +84,6 @@ const Signup = () => {
           className="w-full mb-5 p-4 rounded-xl bg-slate-800 outline-none"
         />
 
-        {/* PASSWORD */}
         <input
           type="password"
           name="password"
@@ -114,7 +112,6 @@ const Signup = () => {
     "
   />
 
-        {/* BUTTON */}
         <button
           type="submit"
           className="w-full py-4 bg-cyan-500 hover:bg-cyan-600 transition rounded-xl font-semibold"

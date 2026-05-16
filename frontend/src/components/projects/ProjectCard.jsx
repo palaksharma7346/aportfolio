@@ -12,10 +12,8 @@ const ProjectCard = ({ project }) => {
       className="relative bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden shadow-lg"
     >
 
-      {/* FEATURED BADGE */}
       {project.featured && <FeaturedBadge />}
 
-      {/* IMAGE */}
       <div className="overflow-hidden">
         <img
           src={project.image}
@@ -24,7 +22,6 @@ const ProjectCard = ({ project }) => {
         />
       </div>
 
-      {/* CONTENT */}
       <div className="p-6">
 
         <h3 className="text-2xl font-bold text-white mb-4">
@@ -35,7 +32,6 @@ const ProjectCard = ({ project }) => {
           {project.description}
         </p>
 
-        {/* TECH STACK */}
         <div className="flex flex-wrap gap-3 mb-6">
 
           {project.tech.map((item, index) => (
@@ -49,7 +45,6 @@ const ProjectCard = ({ project }) => {
 
         </div>
 
-        {/* BUTTONS */}
         <div className="flex items-center gap-4">
 
           <a

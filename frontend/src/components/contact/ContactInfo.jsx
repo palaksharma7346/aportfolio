@@ -54,7 +54,6 @@ const ContactInfo = () => {
       </p>
 
 
-      {/* CONTACT ITEMS */}
       <div className="space-y-6">
 
         {contactData.map((item, index) => (
@@ -89,11 +88,10 @@ const ContactInfo = () => {
       </div>
 
 
-      {/* SOCIALS */}
       <div className="flex gap-5 mt-10">
 
         <a
-          href="https://github.com/"
+          href="https://github.com/palaksharma7346"
           target="_blank"
           rel="noreferrer"
           className="w-14 h-14 rounded-2xl bg-slate-900 border border-slate-800 flex items-center justify-center text-white hover:bg-cyan-500 hover:text-black transition"
@@ -102,7 +100,7 @@ const ContactInfo = () => {
         </a>
 
         <a
-          href="https://linkedin.com/"
+          href="https://www.linkedin.com/in/palak-sharma-4b253028a/"
           target="_blank"
           rel="noreferrer"
           className="w-14 h-14 rounded-2xl bg-slate-900 border border-slate-800 flex items-center justify-center text-white hover:bg-cyan-500 hover:text-black transition"

@@ -23,7 +23,6 @@ const BlogDetails = () => {
 
       <div className="max-w-4xl mx-auto">
 
-        {/* IMAGE */}
         <div className="rounded-3xl overflow-hidden mb-10">
 
           <img
@@ -35,7 +34,6 @@ const BlogDetails = () => {
         </div>
 
 
-        {/* META */}
         <div className="mb-6">
 
           <span className="text-cyan-400">
@@ -53,7 +51,6 @@ const BlogDetails = () => {
         </div>
 
 
-        {/* CONTENT */}
         <div className="text-slate-300 leading-relaxed text-lg space-y-6">
 
           <p>
