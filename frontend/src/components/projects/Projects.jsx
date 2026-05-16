@@ -13,7 +13,7 @@ import { useAuth } from "../../context/AuthContext";
 
 import {
   getProjects,
-} from "../../services/projectService";
+} from "../../services/projectservice";
 
 import ProjectCard from "./ProjectCard";
 import ProjectFilter from "./ProjectFilter";
