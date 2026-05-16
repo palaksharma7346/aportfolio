@@ -9,7 +9,10 @@ import contactRoutes from "./routes/contactRoutes.js";
 import dashboardRoutes from "./routes/dashboardRoutes.js";
 const app = express();
 
-
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 100,
+});
 // Middleware
 app.use(express.json());
 app.use(
@@ -20,21 +23,18 @@ app.use(
     credentials: true,
   })
 );
-app.use(helmet());
+app.use(helmet({
+    crossOriginResourcePolicy: false,
+  }));
 app.use(morgan("dev"));
-
+app.use(limiter);
 // Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/contact", contactRoutes);
 app.use("/api/projects", projectRoutes);
 app.use("/api/dashboard", dashboardRoutes);
-// Rate Limiter
-const limiter = rateLimit({
-  windowMs: 15 * 60 * 1000,
-  max: 100,
-});
 
-app.use(limiter);
+
 
 
 // Test Route
