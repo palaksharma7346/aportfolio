@@ -14,16 +14,9 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: (origin, callback) => {
-      if (
-        !origin ||
-        /^http:\/\/localhost:\d+$/.test(origin)
-      ) {
-        callback(null, true);
-      } else {
-        callback(new Error(`CORS policy blocked: ${origin}`));
-      }
-    },
+     origin: [
+      "https://aportfolio-r2i6.vercel.app",
+    ],
     credentials: true,
   })
 );
